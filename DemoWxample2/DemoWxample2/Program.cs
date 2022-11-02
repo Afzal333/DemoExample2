@@ -10,7 +10,8 @@ namespace DemoExample2
             Console.WriteLine( "Enter the option");
             Console.WriteLine("1.FibonacciSeries"+ "\n" +
                                 "2.PerfectNumber"+"\n"+
-                                "3.PrimeNumber"+"\n");
+                                "3.PrimeNumber"+"\n"+
+                                "4.ReverseNumber");
             int options = Convert.ToInt32(Console.ReadLine());
             switch (options)
             {
@@ -33,6 +34,13 @@ namespace DemoExample2
                     int value1 = Convert.ToInt32(Console.ReadLine());
                     primeNumber.CheckPrime(value1);
                     break;
+                case 4:
+                    ReverseNumber reverseNumber = new ReverseNumber();
+                    Console.WriteLine("Enter the Value to Reverse" + "\n\n");
+                    int value2 = Convert.ToInt32(Console.ReadLine());
+                    reverseNumber.Reverse(value2);
+                    break;
+
             }
         }
     }
