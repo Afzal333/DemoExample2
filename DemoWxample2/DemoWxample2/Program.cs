@@ -12,7 +12,8 @@ namespace DemoExample2
                                 "2.PerfectNumber"+"\n"+
                                 "3.PrimeNumber"+"\n"+
                                 "4.ReverseNumber"+"\n"+
-                                "5.CouponNumber"+"\n");
+                                "5.CouponNumber"+"\n"+
+                                "6.StopWatch"+"\n");
             int options = Convert.ToInt32(Console.ReadLine());
             switch (options)
             {
@@ -45,6 +46,10 @@ namespace DemoExample2
                     Console.WriteLine("\n" + "Enter the no: of Coupons" +"\n");
                     int num = Convert.ToInt32(Console.ReadLine());
                     CouponNumber.GenerateCoupons(num);
+                    break;
+                case 6:
+                    StopWatch stopWatch = new StopWatch();
+                    stopWatch.start();
                     break;
 
             }
